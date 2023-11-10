@@ -107,4 +107,4 @@ O código realiza as seguintes operações:
 <img src="/assets/img/NODE-RED.jpg">
 
 ## *Observação*
-*Para mais informações acesse nosso [github](https://github.com/lifesustent/iot-sprint-03.git)
+*Para mais informações acesse nosso [github](https://github.com/lifesustent/iot-sprint-04.git)
