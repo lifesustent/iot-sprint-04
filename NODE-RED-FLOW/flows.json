@@ -1,0 +1,108 @@
+[
+    {
+        "id": "e152fdb01fc7244d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "34e24e33174442b1",
+        "type": "serial in",
+        "z": "e152fdb01fc7244d",
+        "name": "",
+        "serial": "bb8d2b94bde61ac0",
+        "x": 70,
+        "y": 500,
+        "wires": [
+            [
+                "f8f592ce27b726d2"
+            ]
+        ]
+    },
+    {
+        "id": "b722b2ef09fb083f",
+        "type": "mqtt out",
+        "z": "e152fdb01fc7244d",
+        "name": "",
+        "topic": "1ESR/LIFESUSTENT/TEMP",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "25a33843b2c5ee21",
+        "x": 520,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f8f592ce27b726d2",
+        "type": "json",
+        "z": "e152fdb01fc7244d",
+        "name": "",
+        "property": "payload.umidade",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 580,
+        "wires": [
+            [
+                "b722b2ef09fb083f"
+            ]
+        ]
+    },
+    {
+        "id": "bb8d2b94bde61ac0",
+        "type": "serial-port",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "25a33843b2c5ee21",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
